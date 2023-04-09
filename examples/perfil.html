@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    ACELL - Sistema de Gestão de Células
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/ace.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/material-dashboard.css">
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="azure" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+      <div class="logo">
+        <a href="#" class="simple-text logo-normal">
+          ACELL
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item  ">
+            <a class="nav-link" href="home.html">
+              <i class="material-icons">home</i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">
+              <i class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link" href="perfil.html">
+              <i class="material-icons">person_pin</i>
+              <p>Meu Perfil</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="pessoas.html">
+              <i class="material-icons">person</i>
+              <p>Pessoas</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="celula.html">
+              <i class="material-icons">bubble_chart</i>
+              <p>Célula</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="consolidacao.html">
+              <i class="material-icons">people</i>
+              <p>Consolidação</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="tesouraria.html">
+              <i class="material-icons">account_balance</i>
+              <p>Tesouraria</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="relatorios.html">
+              <i class="material-icons">description</i>
+              <p>Relatórios</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="graficos.html">
+              <i class="material-icons">show_chart</i>
+              <p>Gráficos</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="informativo.html">
+              <i class="material-icons">info</i>
+              <p>Painel Informativo</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="administracao.html">
+              <i class="material-icons">laptop_mac</i>
+              <p>Administração</p>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="home.html">Início</a> / <a class="navbar-brand" href="perfil.html">Meu Perfil</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <form class="navbar-form">
+              <div class="input-group no-border">
+               
+                  <div class="ripple-container"></div>
+               
+              </div>
+            </form>
+            <ul class="navbar-nav">
+              
+           
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">exit_to_app</i>Sair
+                </a>
+                <div class="dropdown-divider"></div>
+               
+              </li>
+            </ul>
+            </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Meus Dados</h4>
+                  <p class="card-category">Dados do perfil</p>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row">
+                      
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="form-group">Nome</label>
+                          <input type="text" class="form-control" value="Vinicius Teixeira de Souza">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="form-group">Sexo</label><br>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> Masculino
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Feminino
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="form-group">Data de Nascimento</label>
+                          <input type="date" class="form-control" value="1992-02-17">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                         <div class="form-group" style="margin-top: 0px;">
+                          <label for="estcivil" class="form-group" >Estado Civil</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- Estado Civil -" data-size="7" id="estcivil">
+                            <option value="1">Solteiro</option>
+                            <option value="2" selected>Casado</option>
+                            <option value="3">Separado</option>
+                            <option value="4">Divorciado</option>
+                            <option value="5">Viúvo</option>
+                         
+                        </select>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="form-group">Endereço</label>
+                          <input type="text" class="form-control" value="Rua Dália">
+                        </div>
+                      </div>
+                      <div class="col-md-1">
+                        <div class="form-group">
+                          <label class="form-group">Número</label>
+                          <input type="text" class="form-control" value="0">
+                        </div>
+                      </div>
+                      <div class="col-md-1">
+                        <div class="form-group">
+                          <label class="form-group">Complemento</label>
+                          <input type="text" class="form-control" value="Lt15 Qd10">
+                        </div>
+                      </div>
+                   
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label class="form-group">Bairro</label>
+                        <input type="text" class="form-control" value="Jardim Guandu">
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label class="form-group">Cidade</label>
+                        <input type="text" class="form-control" value="Nova Iguaçu">
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="uf" class="form-group" >UF</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- UF -" data-size="10" id="uf">
+                            <option value="1">AC</option>
+                            <option value="2">SP</option>
+                            <option value="3" selected>RJ</option>
+                        </select>
+                        </div>
+                     
+                      </div>
+                      <div class="col-md-1">
+                        <div class="form-group">
+                          <label class="form-group">CEP</label>
+                          <input type="text" class="form-control" value="26298-285">
+                        </div>
+                      </div>
+                    </div>
+                 
+                
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="form-group">RG</label>
+                          <input type="text" class="form-control" value="25.602.299-7">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="form-group">CPF</label>
+                          <input type="text" class="form-control" value="143.857.017-17">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="form-group">Telefone</label>
+                          <input type="text" class="form-control" name="telefone" value="(21)2686-0613">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="form-group">Celular</label>
+                          <input type="text" class="form-control" value="(21)98141-9211">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="form-group">E-mail</label>
+                          <input type="email" class="form-control" value="vinicius.teixeira.1992@gmail.com">
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="row">
+                     
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="form-group">Profissão</label>
+                          <input type="text" class="form-control" value="Analista de TI">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                      
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="grauinst" class="form-group" >Grau de Instrução</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- Grau de Instrução -" data-size="10" id="grauinst">
+                            <option value="1">Ensino Fundamental Completo</option>
+                            <option value="2">Ensino Médio Completo</option>
+                            <option value="3" selected>Ensino Superior Completo</option>
+                        </select>
+                        </div>
+                     
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="form-group">É batizado(a)?</label><br>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="batizado" id="inlineRadio1" value="sim" checked> Sim
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="batizado" id="inlineRadio2" value="não" > Não
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2" id="dtbatismo">
+                        <div class="form-group">
+                          <label class="form-group" id="dtbatismo">Data do Batismo</label>
+                          <input type="date" class="form-control" name="dtbatismo" id="dtbatismo" value="2016-12-17">
+                        </div>
+                      </div>
+                      <div class="col-md-3" id="igrejabatismo">
+                        <div class="form-group">
+                          <label class="form-group" id="igrejabatismo">Igreja de Batismo</label>
+                          <input type="text" class="form-control" name="igrejabatismo" id="igrejabatismo" value="Igreja Batista Peniel Nova Iguaçu"> 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                            
+                      <div class="col-md-3">
+                      
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="celula" class="form-group" >Célula</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- Célula -" data-size="3" id="celula">
+                            <option value="1" selected>Maná de Deus</option>
+                          
+                        </select>
+                        </div>
+                     
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="form-group">Já foi ao Encontro com Deus ?</label><br>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="encontro" id="inlineRadio1" value="sim" checked> Sim
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="encontro" id="inlineRadio2" value="não" > Não
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="form-group">Fez o Curso de Crescimento Espiritual?</label><br>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="crescespiritual" id="inlineRadio1" value="sim" checked> Sim
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="crescespiritual" id="inlineRadio2" value="não" > Não
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="form-group">Fez o Curso de Maturidade no Espírito?</label><br>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="maturidade" id="inlineRadio1" value="sim" > Sim
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="maturidade" id="inlineRadio2" value="não" checked> Não
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="form-group">Fez o Curso de Treinamento de Líderes?</label><br>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="ctl" id="inlineRadio1" value="sim" > Sim
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check form-check-radio form-check-inline">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="ctl" id="inlineRadio2" value="não" checked> Não
+                              <span class="circle">
+                                  <span class="check"></span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="posicao" class="form-group" >Posição</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- Posição -" data-size="7" id="posicao">
+                            <option value="1">Líder de Célula</option>
+                            <option value="2">Líder em Treinamento</option>
+                            <option value="3" selected>Membro</option>
+                            <option value="4">Frequentador Assíduo</option>
+                            <option value="5">Visitante</option>
+                        </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="situacao" class="form-group" >Situação</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- Situação -" data-size="7" id="situacao">
+                            <option value="1" selected>Ativo</option>
+                            <option value="2">Inativo</option>
+                            <option value="3">Afastado</option>
+                            <option value="4">Falecido</option>
+                            
+                        </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="login" class="form-group" >Login do Sistema</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- Login do Sistema -" data-size="7" id="login">
+                            <option value="1" selected>vteixeira</option>
+                            <option value="2">jbruno</option>
+                            <option value="3">mferreira</option>
+                            <option value="4">sferreira</option>
+                            
+                        </select>
+                        </div>
+                      </div>
+
+                    
+                      
+                     </div>
+                    <button type="submit" class="btn btn-primary pull-right">Editar Dados</button>
+                    <div class="clearfix"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <a href="#">
+                    <img class="img" src="../assets/img/faces/vini.jpg" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-category text-gray">Membro de Célula - Maná de Deus</h6>
+                  <h4 class="card-title">Vinicius Teixeira de Souza</h4>
+                  <p class="card-description">
+                    Uma descrição sobre a pessoa, falando de características, hobbies e etc.
+                  </p>
+                  <a href="#" class="btn btn-primary btn-round">Trocar Foto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+      
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, desenvolvido por 
+            <a href="#" target="_blank">ACE Tecnologia</a>.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+ 
+  <!--   Arquivos JS   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script src="../assets/js/plugins/moment.min.js"></script>
+  <script src="../assets/js/plugins/sweetalert2.js"></script>
+  <script src="../assets/js/plugins/jquery.validate.min.js"></script>
+  <script src="../assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+  <script src="../assets/js/plugins/bootstrap-selectpicker.js"></script>
+  <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+  <script src="../assets/js/plugins/jquery.dataTables.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap-tagsinput.js"></script>
+  <script src="../assets/js/plugins/jasny-bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/fullcalendar.min.js"></script>
+  <script src="../assets/js/plugins/jquery-jvectormap.js"></script>
+  <script src="../assets/js/plugins/nouislider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+  <script src="../assets/js/plugins/arrive.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <script src="../assets/js/plugins/chartist.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <script src="../assets/js/material-dashboard.js" type="text/javascript"></script>
+  <script src="../assets/js/ace.js"></script></body>
+
+</html>

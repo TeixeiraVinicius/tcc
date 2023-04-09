@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    ACELL - Sistema de Gestão de Células
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/ace.css" rel="stylesheet" />
+  <link href="../assets/css/material-dashboard.css" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="azure" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+      <div class="logo">
+        <a href="#" class="simple-text logo-normal">
+          ACELL
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item  ">
+            <a class="nav-link" href="home.html">
+              <i class="material-icons">home</i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">
+              <i class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="perfil.html">
+              <i class="material-icons">person_pin</i>
+              <p>Meu Perfil</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="pessoas.html">
+              <i class="material-icons">person</i>
+              <p>Pessoas</p>
+            </a>
+          </li>
+          <li class="nav-item active  ">
+            <a class="nav-link" href="celula.html">
+              <i class="material-icons">bubble_chart</i>
+              <p>Célula</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="consolidacao.html">
+              <i class="material-icons">people</i>
+              <p>Consolidação</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="tesouraria.html">
+              <i class="material-icons">account_balance</i>
+              <p>Tesouraria</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="relatorios.html">
+              <i class="material-icons">description</i>
+              <p>Relatórios</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="graficos.html">
+              <i class="material-icons">show_chart</i>
+              <p>Gráficos</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="informativo.html">
+              <i class="material-icons">info</i>
+              <p>Painel Informativo</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="administracao.html">
+              <i class="material-icons">laptop_mac</i>
+              <p>Administração</p>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="celula.html">Voltar</a> / <a class="navbar-brand" href="adicionar-reuniao.html">Adicionar Reunião</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <form class="navbar-form">
+              <div class="input-group no-border">
+               
+                  <div class="ripple-container"></div>
+               
+              </div>
+            </form>
+            <ul class="navbar-nav">
+              
+           
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">
+                  <i class="material-icons">exit_to_app</i>Sair
+                </a>
+                <div class="dropdown-divider"></div>
+               
+              </li>
+            </ul>
+            </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">Dados da Reunião</h4>
+                  <p class="card-category">Cadastro de Reuniões</p>
+                </div>
+                <div class="card-body">
+                  <form>
+                                                       
+                      <div class="row">
+                      
+                      <div class="col-md-3">
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="celula" class="bmd-label-floating" >Célula</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- Célula -" data-size="10" id="celula">
+                            <option value="1">Maná de Deus</option>
+                           
+                        </select>
+                        </div>
+
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Endereço</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-md-1">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Número</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Complemento</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                 
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Bairro</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                  
+                    </div>
+                   
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Cidade</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                      
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="uf" class="bmd-label-floating" >UF</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- UF -" data-size="10" id="uf">
+                            <option value="1">AC</option>
+                            <option value="2">SP</option>
+                            <option value="3">RJ</option>
+                        </select>
+                        </div>
+                     
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">CEP</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                   
+                    <div class="col-md-3">
+                     
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="diareuniao" class="form-group" >Dia da Reunião</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- Dia da Reunião -" data-size="10" id="diareuniao">
+                            <option value="1">Domingo</option>
+                            <option value="2">Segunda-Feira</option>
+                            <option value="3">Terça-Feira</option>
+                            <option value="4">Quarta-Feira</option>
+                            <option value="5">Quinta-Feira</option>
+                            <option value="6">Sexta-Feira</option>
+                            <option value="7">Sábado</option>
+                        </select>
+                        </div>
+                      </div>
+                  
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label class="bmd-label-floating">Horário</label>
+                        <input type="time" class="form-control timepicker">
+                      </div>
+                    </div>
+                  
+                    </div>
+                
+                    <div class="row">
+                      <div class="col-md-3">
+                     
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="rede" class="form-group" >Rede</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" title="- Rede -" data-size="10" id="rede">
+                            <option value="1">Radicais Kids</option>
+                            <option value="2">Radicais Teens</option>
+                            <option value="3">Radicais Livres</option>
+                            <option value="4">Ceifeiros</option>
+                            <option value="5">Adeildo</option>
+                            <option value="6">Rogério</option>
+                            <option value="7">Júnior</option>
+                        </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">E-mail</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="idlider" class="form-group" >Líderes</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" multiple title="- Líderes -" data-size="10" id="lider">
+                            <option value="1">Jorge Bruno</option>
+                            <option value="2">Marcilene Ferreira</option>
+
+                        </select>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group" style="margin-top: 0px;">
+                          <label for="lidert" class="form-group" >Líderes em Treinamento</label><br>
+                          <select class="selectpicker" data-style="select-with-transition" multiple title="- Líderes em Treinamento -" data-size="10" id="lidert">
+                            <option value="1">João</option>
+                            <option value="2">Nina</option>
+                            <option value="3">Rose</option>
+                            <option value="4">Adriano</option>
+                       
+                        </select>
+                        </div>
+                      </div>
+                      
+                       
+                    </div>
+                  
+               
+                   
+                   
+                    <button type="submit" class="btn btn-primary pull-right">Salvar Dados</button>
+                    <div class="clearfix"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-fluid">
+      
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, desenvolvido por 
+            <a href="#" target="_blank">ACE Tecnologia</a>.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+ 
+  <!--   Arquivos JS   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script src="../assets/js/plugins/moment.min.js"></script>
+  <script src="../assets/js/plugins/sweetalert2.js"></script>
+  <script src="../assets/js/plugins/jquery.validate.min.js"></script>
+  <script src="../assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+  <script src="../assets/js/plugins/bootstrap-selectpicker.js"></script>
+  <script src="../assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+  <script src="../assets/js/plugins/jquery.dataTables.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap-tagsinput.js"></script>
+  <script src="../assets/js/plugins/jasny-bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/fullcalendar.min.js"></script>
+  <script src="../assets/js/plugins/jquery-jvectormap.js"></script>
+  <script src="../assets/js/plugins/nouislider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+  <script src="../assets/js/plugins/arrive.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <script src="../assets/js/plugins/chartist.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <script src="../assets/js/ace.js"></script>
+  <script src="../assets/js/material-dashboard.js" type="text/javascript"></script>
+</body>
+
+  <script>
+  $(document).ready(function() {
+    $(document).ready(function() {
+            $("#dtbatismo, #igrejabatismo").hide();
+          });
+
+    $('input:radio[name="batizado"]').on("change", function() {
+        if (this.checked && this.value == 'sim') {
+            $("#dtbatismo, #igrejabatismo").show();
+         
+        } else {
+      
+            $("#dtbatismo, #igrejabatismo").hide();
+        }
+    });
+});
+
+  </script>
+
+  <script>
+  $('.datetimepicker').datetimepicker({
+    icons: {
+        time: "fa fa-clock-o",
+        date: "fa fa-calendar",
+        up: "fa fa-chevron-up",
+        down: "fa fa-chevron-down",
+        previous: 'fa fa-chevron-left',
+        next: 'fa fa-chevron-right',
+        today: 'fa fa-screenshot',
+        clear: 'fa fa-trash',
+        close: 'fa fa-remove'
+    }
+});
+</script>
+
+</html>
